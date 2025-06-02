@@ -1570,16 +1570,16 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 .welcome-content h1 {
     font-size: 106px;
     font-weight: 900;
-    color: #f3ba2f;
+    color: #ffea80;
     margin-bottom: 20px;
     letter-spacing: 3px;
     max-inline-size: 15ch;
     text-shadow: 0.1em 0.1em 0 hsl(0deg 0% 100%);
 }
 .welcome-content p {
-    font-size: 32px;
-    color: #f3ba2f;
-    font-weight: 600;
+    font-size: 44px;
+    /* color: #ffea80; */
+    font-weight: 800;
     margin-bottom: 30px;
 } 
 
@@ -1847,7 +1847,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     overflow: visible;
     padding: 5px 30px 20px 30px;
     height: 50px;
-    border-bottom: 5px solid #f3ba2f;
+    border-bottom: 5px solid #ffea80;
 }
 .copy-btn.v3{
     clip-path: none;
@@ -1896,10 +1896,10 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     cursor: pointer;
 }
 .b-text {
-    color: #f3ba2f !important;
+    color: #000000 !important;
 }
 .w-text{
-    color: #fff !important;
+    /* color: #fff !important; */
 }
 .g-text{
     color: #d8d0d0 !important
@@ -1911,7 +1911,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     text-shadow: 2px 0.1em 0 hsl(116deg 78% 53%);
 }
 .bold{
-    font-weight: 600 !important
+    font-weight: 900 !important
 }
 .p-text{
     color: blueviolet !important
@@ -1973,7 +1973,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 
 .moving-bg {
     position: relative;
-    background: #f3ba2f;
+    background: #ffea80;
     width: 160em;
     padding: 14px 0;
     border-top: 4px solid #000;
@@ -5326,7 +5326,7 @@ textarea:required {
     height: 75px;
     line-height: 75px;
     margin: 0 auto;
-    background: #f3ba2f;
+    background: #ffea80;
     background-size: contain;
     color: #fff;
 }
@@ -5406,7 +5406,7 @@ textarea:required {
    float: left;
    padding-left: 30px;
    font-weight: 600;
-   color: #f3ba2f;
+   color: #ffea80;
 }
 .pre-sale-bg{
     padding: 40px 30px;
@@ -5440,7 +5440,7 @@ textarea:required {
 .ico-progress li.strength {
    float: right;
    font-weight: 600;
-   color: #f3ba2f;
+   color: #ffea80;
 }
 .ico-progress .current-progress {
    width: 100%;
@@ -5456,7 +5456,7 @@ textarea:required {
     height: 26px;
     bottom: -5px;
     left: 12%;
-    background: #f3ba2f
+    background: #ffea80
 }
 
 .current-progress .progress-bar{
@@ -5764,6 +5764,7 @@ body.light-version {
 
 .light-version p {
     color: #000000;
+    font-weight: bold;
 }
 
 .light-version h2,
@@ -5781,7 +5782,7 @@ body.light-version {
 .light-version input:valid ~ label,
 .light-version textarea:valid ~ label,
 .light-version .copywrite_text > p > a {
-    color: #f3ba2f;
+    color: #ffea80;
 }
 
 .light-version .dream-faq-area dt {
