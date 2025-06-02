@@ -125,7 +125,7 @@ li {
 p {
     line-height: 1.9;
     color: rgba(255, 255, 255, 0.5);
-    font-size: 32px;
+    font-size: 28px;
     font-family: myFirstFont;
 }
 dt {
@@ -135,7 +135,7 @@ dt {
     font-family: myFirstFont;
 }
 span {
-    font-size: 21px;
+    font-size: 18px;
     font-family: myFirstFont;
 }
 
@@ -1571,7 +1571,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     font-size: 160px;
     font-weight: 900;
     color: #ffea80;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     letter-spacing: 3px;
     max-inline-size: 15ch;
     /* text-shadow: 0.1em 0.1em 0 hsl(0deg 0% 100%); */
@@ -1580,7 +1580,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     font-size: 44px;
     /* color: #ffea80; */
     font-weight: 800;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 } 
 
 .character-features{
@@ -5765,6 +5765,7 @@ body.light-version {
 .light-version p {
     color: #000000;
     font-weight: bold;
+    line-height: 45px;
 }
 
 .light-version h2,
