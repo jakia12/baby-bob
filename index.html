@@ -21,6 +21,11 @@
   <!-- Responsive Stylesheet -->
   <link rel="stylesheet" href="css/responsive.css" />
   <style>
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
     /* Ensure this CSS has high specificity and uses !important */
     .moving-bg .marquee-block .w-text {
       color: #1a5983 !important;
@@ -46,6 +51,30 @@
       margin: 0;
       padding: 0;
     }
+
+    .ul-center {
+      align-items: center;
+    }
+
+    @media screen and (max-width:767px) {
+      .ul-center {
+        align-items: start;
+      }
+
+      .hidden-small {
+        display: none !important;
+      }
+    }
+
+    @media screen and (max-width:424px) {
+      .ul-center {
+        align-items: start;
+      }
+
+      .hidden-small {
+        display: none !important;
+      }
+    }
   </style>
 </head>
 
@@ -61,7 +90,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="banner">
     <div class="container">
       <!-- Brand -->
-      <a class="navbar-brand" href="#"><span><img draggable="false" style="max-width: 80px" src="img/core-img/head.png"
+      <a class="navbar-brand" href="#"><span><img draggable="false" style="max-width: 80px" src="img/core-img/hwt.png"
             alt="logo" /></span>
       </a>
 
@@ -72,28 +101,35 @@
 
       <!-- Navbar links -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto ul-center">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">$BBOB</a>
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#staking">STAKING</a>
           </li>
           <!-- <li class="nav-item">
-            <a class="nav-link" href="#tokenomics">Tokenomics</a>
-          </li> -->
-          <li class="nav-item">
             <a class="nav-link" href="#faq">How To Buy</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a href="https://pancakeswap.finance/swap?outputCurrency=0x36765928c3d4aBf286f2B67120C093c26a284444"
+              class="nav-link">BUY $BBOB</a>
           </li>
+          <li class="nav-item">
+            <a href="utility.html"
+              class="nav-link">UTILITY</a>
+          </li> -->
 
           <li class="lh-55px">
             <a href="https://pancakeswap.finance/swap?outputCurrency=0x36765928c3d4aBf286f2B67120C093c26a284444"
-              class="btn copy-btn v2 ml-50">BUY $BBOB</a>
+              class="btn copy-btn v2 ml-4">BUY $BBOB</a>
           </li>
-          <!-- <li class="lh-55px">
-            <a href="utility.html"
-              class="btn copy-btn v2 ml-50">UTILITY</a>
-          </li> -->
+          <li class="lh-55px">
+            <a href="utility.html" class="btn copy-btn v2 ml-4">UTILITY</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -218,7 +254,7 @@
         <!-- Image Section -->
         <div class="col-12 col-lg-6 offset-lg-0 col-md-12 no-padding-left">
           <div class="welcome-meter">
-            <img draggable="false" class="comp-img floating-anim" src="img/core-img/img3.png" alt="" />
+            <img draggable="false" class="comp-img floating-anim" src="img/core-img/abt.png" alt="" />
           </div>
         </div>
         <!-- Text Content Section -->
@@ -227,58 +263,58 @@
             <div class="dream-dots text-left fadeInUp" data-wow-delay="0.2s">
               <span class="gradient-text">ABOUT</span>
             </div>
-            <h4 style="font-weight: bolder; color: black;" class="fadeInUp" data-wow-delay="0.3s">$BBOB</h4>
+            <!-- <h4 style="font-weight: bolder; color: black;" class="fadeInUp" data-wow-delay="0.3s">$BBOB</h4> -->
             <p class="fadeInUp" data-wow-delay="0.4s">
-              The origin of Baby Builder $BBOB: $BOB was a legend — always building, no weekends, no breaks. But one
-              day, he built his biggest project yet… a baby.
+              Baby Builder $BBOB built on the BNB Chain, led by a growing community and a clear vision: to create, to
+              connect, and to reward those who believe early.
               <br>
-              Not just any baby — $BBOB, the Baby Builder.
-              From day one, $BBOB was different. While other kids played, he was already building — and doing it like a
-              Pro. Once a builder — always BUILDER.
+              Baby Builder - it’s a movement of people who actually want to build something real.
             </p>
 
             <a class="btn copy-btn v2 mt-15 fadeInUp" data-wow-delay="0.6s"
-              href="https://pancakeswap.finance/swap?outputCurrency=0x36765928c3d4aBf286f2B67120C093c26a284444">
-              Buy $BBOB</a>
+              href="!#">
+              LAUNCH DAPP</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- stacking -->
+  <!-- STAKING -->
 
-  <!-- <section class="section-padding-100" id="about" style="background-color: #ffea80">
+  <section class="section-padding-100" id="staking" style="background-color: #ffea80">
     <div class="container">
       <div class="row flex-column-reverse flex-lg-row align-items-center">
-       
+
         <div class="col-12 col-lg-6 offset-lg-0 col-md-12 no-padding-left">
           <div class="who-we-contant wavy-border">
             <div class="dream-dots text-left fadeInUp" data-wow-delay="0.2s">
-              <span class="gradient-text">$BBOB STACKING</span>
+              <!-- <span class="gradient-text">$BBOB STAKING</span> -->
             </div>
-            <h4 style="font-weight: bolder; color: black;" class="fadeInUp" data-wow-delay="0.3s">STACKING</h4>
+            <h4 style="font-weight: bolder; color: black;" class="fadeInUp" data-wow-delay="0.3s">STAKING</h4>
             <p class="fadeInUp" data-wow-delay="0.4s">
-              Stake $BBOB on BabyDoge Swap - by staking, you’re not only supporting the project’s long-term vision, you're also being rewarded daily for your commitment.
+              Stake $BBOB on BabyDoge Swap - by staking, you’re not only supporting the project’s long-term vision,
+              you're also being rewarded daily for your commitment.
               <br>
-              It’s a way to grow with the community, benefit from your belief in the project, and take part in what we’re building — together.
+              It’s a way to grow with the community, benefit from your belief in the project, and take part in what
+              we’re building — together.
             </p>
 
             <a class="btn copy-btn v2 mt-15 fadeInUp" data-wow-delay="0.6s"
               href="https://swap.babydoge.com/farms/pools/0xb781fd2ef90380455818b99e8f9c53dd4d8ec36b">
-              STACKING</a>
+              STAKING</a>
           </div>
 
         </div>
-        
+
         <div class="col-12 col-lg-6 offset-lg-0 mt-s">
           <div class="welcome-meter">
-            <img draggable="false" class="comp-img floating-anim" src="img/core-img/img4.png" alt="" />
+            <img draggable="false" class="comp-img floating-anim hidden-small" src="img/core-img/img4.png" alt="" />
           </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <div class="hand-drawn-strip"></div>
   <!-- ##### TikTok Submission Contest ##### -->
@@ -322,7 +358,7 @@
       <div class="row align-items-center">
         <div class="col-12 col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-sm-12">
           <div class="welcome-meter">
-            <img draggable="false" class="comp-img" src="img/core-img/head.png" alt="" />
+            <img draggable="false" class="comp-img" src="img/core-img/hwt.png" alt="" />
           </div>
         </div>
         <div class="col-12 col-lg-6 col-md-12">
@@ -391,12 +427,12 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-3 col-lg-6 col-md-6">
+        <div class=" col-lg-6 col-md-6">
           <div class="footer-copywrite-info">
             <!-- Copywrite -->
             <div class="copywrite_text fadeInUp" data-wow-delay="0.2s">
               <div class="footer-logo">
-                <a href="#"><img draggable="false" src="img/core-img/img.png" alt="logo" />
+                <!-- <a href="#"><img draggable="false" src="img/core-img/img.png" alt="logo" /> -->
                 </a>
               </div>
             </div>
@@ -404,7 +440,7 @@
           </div>
         </div>
 
-        <div class="col-9 col-lg-6 col-md-6">
+        <div class="col-12 col-lg-6 col-md-6">
           <div class="footer-social-info fadeInUp" data-wow-delay="0.4s">
             <a href="https://t.me/BabyBuilderBBOB">
               <img src="/img/core-img/telegram.png" style="max-width: 50px; margin: 5px" alt="" srcset="" />
@@ -415,10 +451,10 @@
             </a>
             <a
               href="https://www.dextools.io/app/en/bnb/pair-explorer/0x61acb7ed45ebef357b9d0a2db64a03ae85c3ea9b?t=1748895122693">
-              <img src="/img/core-img/dextool-b.png" style="max-width: 50px; margin: 5px" alt="" srcset="" />
+              <img src="/img/core-img/dext.png" style="max-width: 50px; margin: 5px" alt="" srcset="" />
             </a>
             <a href="https://dexscreener.com/bsc/0x61acb7ed45ebef357b9d0a2db64a03ae85c3ea9b">
-              <img src="/img/core-img/dexscreener-b.png" style="max-width: 50px; margin: 5px" alt="" srcset="" />
+              <img src="/img/core-img/dexs.png" style="max-width: 50px; margin: 5px" alt="" srcset="" />
             </a>
             <a href="https://coinmarketcap.com/currencies/babybuilder/">
               <img src="/img/core-img/cmc.png" style="max-width: 50px; margin: 5px" alt="" srcset="" />

@@ -34,6 +34,9 @@
     </style>
 
     <style>
+        html, body{
+            overflow-x: hidden;
+        }
         /* Hand-drawn style white strip */
         .hand-drawn-strip {
             width: 100%;
@@ -49,6 +52,26 @@
 
         .stacking-div {
             margin-top: 10%;
+        }
+
+        .ul-center {
+            align-items: center;
+        }
+
+        @media screen and (max-width:767px) {
+            .ul-center {
+                align-items: start;
+            }
+
+            .hidden-small {
+                display: none !important;
+            }
+        }
+
+        @media screen and (max-width:424px) {
+            .ul-center {
+                align-items: start;
+            }
         }
     </style>
 </head>
@@ -66,7 +89,7 @@
         <div class="container">
             <!-- Brand -->
             <a class="navbar-brand" href="#"><span><img draggable="false" style="max-width: 80px"
-                        src="img/core-img/head.png" alt="logo" /></span>
+                        src="img/core-img/hwt.png" alt="logo" /></span>
             </a>
 
             <!-- Toggler/collapsibe Button -->
@@ -76,10 +99,17 @@
 
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto ul-center">
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
+                    <!-- <li class="nav-item">
+                        <a href="https://pancakeswap.finance/swap?outputCurrency=0x36765928c3d4aBf286f2B67120C093c26a284444"
+                            class="nav-link my-btn">BUY $BBOB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="!#" class="nav-link my-btn">LAUNCH DAPP</a>
+                    </li> -->
 
                     <!-- <li class="nav-item">
             <a class="nav-link" href="#tokenomics">Tokenomics</a>
@@ -88,10 +118,10 @@
 
                     <li class="lh-55px">
                         <a href="https://pancakeswap.finance/swap?outputCurrency=0x36765928c3d4aBf286f2B67120C093c26a284444"
-                            class="btn copy-btn v2 ml-50">BUY $BBOB</a>
+                            class="btn copy-btn v2 ml-3">BUY $BBOB</a>
                     </li>
                     <li class="lh-55px">
-                        <a href="!#" class="btn copy-btn v2 ml-50">LAUNCH DAPP</a>
+                        <a href="!#" class="btn copy-btn v2 ml-3">LAUNCH DAPP</a>
                     </li>
                 </ul>
             </div>
@@ -101,22 +131,23 @@
 
     <!-- ##### Welcome Area Start ##### -->
 
-    <div class="stacking-div">
+    <!-- <div class="stacking-div">
         <h2 style="text-align: center; color: black;">UTILITY INFORMATIONS</h2>
-    </div>
-    <section class="hero-section de-3 section-padding" id="home" style="background: #ffea80">
+    </div> -->
+    <section class="hero-section de-3 section-padding stacking-div" id="home" style="background: #ffea80">
         <!-- Hero Content -->
 
         <div class="container">
-            <div class="row flex-column-reverse flex-lg-row align-items-center my-5">
+            <div class="row flex-column-reverse flex-lg-row align-items-center">
                 <!-- Image Section -->
                 <div class="col-12 col-lg-7 offset-lg-0 col-md-12 no-padding-left">
                     <div class="who-we-contant wavy-border">
-                        <div class="dream-dots text-left fadeInUp" data-wow-delay="0.2s">
-                            <span class="gradient-text">$BBOB STACKING</span>
-                        </div>
-                        <h4 style="font-weight: bolder; color: black;" class="fadeInUp" data-wow-delay="0.3s">STACKING
-                        </h4>
+                        <!-- <div class="dream-dots fadeInUp text-center" data-wow-delay="0.2s">
+                            <p style="color: black; text-align: center;" class="gradient-text ">$BBOB STACKING</p>
+                        </div> -->
+                        <!-- <h4 style="font-weight: bolder; color: black; text-align: center;" class="fadeInUp"
+                            data-wow-delay="0.3s">UTILITY
+                        </h4> -->
                         <p class="fadeInUp" data-wow-delay="0.4s">
                             Builders Talk — Decentralized Messaging dApp Built on BNB Chain
                             <br> <br>
@@ -125,18 +156,8 @@
                             wallet-to-wallet, using only their blockchain address. No signups, no usernames, and no
                             personal data — just secure, anonymous, and fully on-chain messaging powered by smart
                             contracts and blockchain encryption.
-                            <br> <br>
-                            Users can also send transactions directly within the chat and express themselves using
-                            emojis, making conversations more engaging — all while staying completely decentralized.
-                            Built with privacy, simplicity, and real utility in mind, Builders Talk brings meaningful
-                            function to $BBOB — connecting builders, communities, and ideas.
-                            <br> <br>
-                            It’s more than messaging. <br>
-                            It’s how real builders connect.
                         </p>
 
-                        <a class="btn copy-btn v2 mt-15 fadeInUp" data-wow-delay="0.6s" href="!#">
-                            LAUNCH DAPP</a>
                     </div>
 
                 </div>
@@ -147,6 +168,27 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="container">
+        <div style="margin-bottom: 8%;" class="who-we-contant wavy-border">
+            <!-- <div class="dream-dots fadeInUp text-center" data-wow-delay="0.2s">
+                            <p style="color: black; text-align: center;" class="gradient-text ">$BBOB STACKING</p>
+                        </div> -->
+
+            <p class="fadeInUp" data-wow-delay="0.4s">
+
+                Users can also send transactions directly within the chat and express themselves using
+                emojis, making conversations more engaging — all while staying completely decentralized.
+                Built with privacy, simplicity, and real utility in mind, Builders Talk brings meaningful
+                function to $BBOB — connecting builders, communities, and ideas.
+                <br> <br>
+                It’s more than messaging. <br>
+                It’s how real builders connect.
+            </p>
+
+            <a class="btn copy-btn v2 mt-15 fadeInUp" data-wow-delay="0.6s" href="!#">
+                LAUNCH DAPP</a>
         </div>
     </section>
     <!-- ##### Welcome Area End ##### -->
@@ -259,12 +301,12 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-3 col-lg-6 col-md-6">
+                <div class=" col-lg-6 col-md-6">
                     <div class="footer-copywrite-info">
                         <!-- Copywrite -->
                         <div class="copywrite_text fadeInUp" data-wow-delay="0.2s">
                             <div class="footer-logo">
-                                <a href="#"><img draggable="false" src="img/core-img/img.png" alt="logo" />
+                                <!-- <a href="#"><img draggable="false" src="img/core-img/img.png" alt="logo" /> -->
                                 </a>
                             </div>
                         </div>
@@ -272,7 +314,7 @@
                     </div>
                 </div>
 
-                <div class="col-9 col-lg-6 col-md-6">
+                <div class="col-12 col-lg-6 col-md-6">
                     <div class="footer-social-info fadeInUp" data-wow-delay="0.4s">
                         <a href="https://t.me/BabyBuilderBBOB">
                             <img src="/img/core-img/telegram.png" style="max-width: 50px; margin: 5px" alt=""
@@ -285,12 +327,10 @@
                         </a>
                         <a
                             href="https://www.dextools.io/app/en/bnb/pair-explorer/0x61acb7ed45ebef357b9d0a2db64a03ae85c3ea9b?t=1748895122693">
-                            <img src="/img/core-img/dextool-b.png" style="max-width: 50px; margin: 5px" alt=""
-                                srcset="" />
+                            <img src="/img/core-img/dext.png" style="max-width: 50px; margin: 5px" alt="" srcset="" />
                         </a>
                         <a href="https://dexscreener.com/bsc/0x61acb7ed45ebef357b9d0a2db64a03ae85c3ea9b">
-                            <img src="/img/core-img/dexscreener-b.png" style="max-width: 50px; margin: 5px" alt=""
-                                srcset="" />
+                            <img src="/img/core-img/dexs.png" style="max-width: 50px; margin: 5px" alt="" srcset="" />
                         </a>
                         <a href="https://coinmarketcap.com/currencies/babybuilder/">
                             <img src="/img/core-img/cmc.png" style="max-width: 50px; margin: 5px" alt="" srcset="" />
