@@ -32,6 +32,23 @@
       font-weight: 800;
     }
 
+    .p-img{
+      width: 110px;
+      height: auto;
+    }
+    .p2-img{
+      width: 80%;
+    }
+
+    @media screen and (max-width:768px) {
+      .p-img{
+        width: 50px;
+      }
+      .p2-img{
+        width: 98%;
+      }
+    }
+
     /* .title-cls{
         font-size: 5rem;
         font-weight: 900;
@@ -426,13 +443,35 @@
 
   <div class="hand-drawn-strip"></div>
 
+  <!-- partners area -->
+
+  <section class="my-5">
+    <div class="container">
+      <h1 class="text-center" style="color: #000;">PARTNERS</h1>
+      <div class="row mt-5">
+        <div class="col-6">
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <img class="p-img" src="./img/core-img/dt.png" alt="">
+          </div>
+        </div>
+        <div class="col-6 ">
+          <div style="display: flex; justify-content: center; align-items: center;"> 
+            <img class="p-img" src="./img/core-img/k.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hand-drawn-strip"></div>
+
   <!-- ##### Footer Area Start ##### -->
   <footer class="footer-area" style="background: #ffea80">
     <br /><br />
 
     <div class="container">
       <div class="row">
-        <div class=" col-lg-6 col-md-6">
+        <div class=" col-lg-4 col-md-4">
           <div class="footer-copywrite-info">
             <!-- Copywrite -->
             <div class="copywrite_text fadeInUp" data-wow-delay="0.2s">
@@ -445,7 +484,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-6 col-md-6">
+        <div class="col-12 col-lg-8 col-md-8">
           <div class="footer-social-info fadeInUp" data-wow-delay="0.4s">
             <a href="https://t.me/BabyBuilderBBOB">
               <img src="/img/core-img/telegram.png" style="max-width: 50px; margin: 5px" alt="" srcset="" />
@@ -463,6 +502,12 @@
             </a>
             <a href="https://coinmarketcap.com/currencies/babybuilder/">
               <img src="/img/core-img/cmc.png" style="max-width: 50px; margin: 5px" alt="" srcset="" />
+            </a>
+            <a href="https://www.coingecko.com/en/coins/babybuilder">
+              <img src="/img/core-img/cg.png" style="max-width: 50px; margin: 5px" alt="" srcset="" />
+            </a>
+            <a href="https://four.meme/token/0x36765928c3d4abf286f2b67120c093c26a284444">
+              <img src="/img/core-img/fmm.png" style="max-width: 50px; margin: 5px" alt="" srcset="" />
             </a>
           </div>
         </div>
