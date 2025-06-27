@@ -6200,3 +6200,17 @@ body.light-version {
 .preview-demo:hover {
   color: #333;
 }
+
+.bob_link {
+  font-weight: bold;
+  color: black;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .bob_link {
+    font-weight: bold;
+    color: black;
+    font-size: 33px;
+  }
+}
